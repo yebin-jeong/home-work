@@ -1,1 +1,42 @@
 /* 여기에 스타일을 구현해 주세요 */
+.content-box {
+  padding: 100px;
+  background-color: #ffffff;
+  text-align: center;
+  min-width: 569px;
+}
+
+.female-face {
+  margin-bottom: 20px;
+}
+
+.img-container {
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+}
+
+.img-container img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+.active-circle,
+.inactive-circle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.active-circle {
+  background-color: #4cfe88;
+}
+
+.inactive-circle {
+  background-color: #dbdbdb;
+}
