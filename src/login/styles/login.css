@@ -1,1 +1,72 @@
 /* CSS를 활용하여 레이아웃 및 스타일링을 완성해주세요 */
+@import "/src/common/a11y.css";
+@import "/src/common/best-reset.css";
+
+body {
+  --font-color: #121212;
+  --gray: #dadada;
+  --white: #fff;
+
+  --font14: 0.875rem;
+  --font12: 0.75rem;
+  --font16: 1rem;
+
+  --height45: 2.8125rem;
+}
+
+.naver-logo {
+  display: block;
+  text-align: center;
+  margin: 4.375rem auto 2.8125rem;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+
+  .input {
+    color: var(--font-color);
+    margin: 1.25rem;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.625rem;
+
+    input {
+      width: 100%;
+      padding: var(--font14);
+
+      font-size: var(--font14);
+      height: var(--height45);
+      border: 1px solid var(--gray);
+      background-color: var(--white);
+    }
+  }
+}
+
+.login-btn {
+  box-sizing: border-box;
+  font-size: var(--font16);
+  width: 100%;
+  height: var(--height45);
+  color: var(--white);
+  background: #03cf5d;
+  border: none;
+
+  margin: 0 1.25rem;
+}
+
+.additional-text {
+  margin: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.icon-toggle {
+  display: none;
+}
