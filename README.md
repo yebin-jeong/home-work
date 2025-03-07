@@ -5,8 +5,10 @@
 ## 마크다운
 
 - [마크다운 문법](./src/md/markdown.md)
-- [회고](./src/md/retrospect.md)
+- [1-2주 차 회고](./src/md/retrospect.md)
 - [avatars](./src/avatars)
-- [회고](./src/avatars/avatars.md)
+- [3주 차 회고](./src/avatars/avatars.md)
 - [로그인](./src/login)
-- [회고](./src/login/login.md)
+- [4주 차 회고](./src/login/login.md)
+- [Apple](./src/apple)
+- [5주 차 회고](./src/apple/apple.md)
