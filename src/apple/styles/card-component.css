@@ -1,3 +1,81 @@
 @import "./reset.css";
 @import "./theme.css";
 @import "./base.css";
+
+.component-wrap {
+  margin: 2.5rem;
+}
+
+/* 버튼 컴포넌트 */
+.btn {
+  padding: var(--x-small-spacing) var(--small-spacing);
+  display: inline-block;
+  border-radius: 1.5rem;
+  font-size: var(--xx-small-text);
+
+  @media (min-width: 1024px) {
+    font-size: var(--x-small-text);
+  }
+}
+
+.btn-fill {
+  --btn-bg: var(--black);
+
+  color: var(--white);
+  background: var(--btn-bg);
+  border: 1px solid var(--btn-bg);
+}
+
+.btn-outline {
+  color: var(--black);
+  background: transparent;
+  border: 1px solid var(--black);
+}
+
+.btn-wrap {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: var(--base-spacing);
+  justify-content: center;
+}
+
+/* 텍스트 컴포넌트 */
+.text-wrap {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+  .title {
+    font-size: var(--large-text);
+    margin-bottom: var(--small-spacing);
+  }
+
+  .subtitle {
+    font-size: var(--base-text);
+    margin-bottom: var(--x-small-spacing);
+    line-height: var(--line-normal);
+  }
+
+  .text {
+    font-size: var(--small-text);
+    color: var(--gray);
+    margin-bottom: var(--x-small-spacing);
+  }
+
+  @media (min-width: 1024px) {
+    .title {
+      font-size: var(--extra-large-text);
+    }
+    .subtitle {
+      font-size: var(--medium-text);
+    }
+  }
+}
+
+/* 카드 컴포넌트 */
+.card-item {
+  background: #ddd;
+  width: 100%;
+  height: var(--size);
+  display: grid;
+}
